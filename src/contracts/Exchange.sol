@@ -21,7 +21,6 @@ contract Exchange {
   event Fee(uint256 fee, uint256 timestamp);
   event FeePaid(uint256 fee, address user);
 
-  // Events
   event Deposit(address token, address user, uint256 amount, uint256 balance);
   event Withdraw(address token, address user, uint256 amount, uint256 balance);
   event Order(
@@ -53,7 +52,6 @@ contract Exchange {
     uint256 timestamp
   );
 
-  // Structs
   struct _Order {
     uint256 id;
     address user;
@@ -158,7 +156,6 @@ contract Exchange {
 
     uint usdInWei = (oracleUsd.mul(ethInWei)).div(oracleEthInUsd);
 
-    // Emit event
     emit Fee(usdInWei, now);
     return usdInWei;
   }

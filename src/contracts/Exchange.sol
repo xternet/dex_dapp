@@ -7,7 +7,6 @@ import "@chainlink/contracts/src/v0.5/interfaces/AggregatorV2V3Interface.sol";
 contract Exchange {
   using SafeMath for uint;
 
-  // Variables
   address public feeAccount; // the account that receives exchange fees
   address constant ETHER = address(0); // store Ether in tokens mapping with blank address
   mapping(address => mapping(address => uint256)) public tokens;

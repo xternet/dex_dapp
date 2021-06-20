@@ -18,6 +18,3 @@ Changes:
 6. Adding fee info to OrderBook.js.
 7. Improving UI of Balance.js, adding table for deposit token.
 8. Deleting loadAllOrders(); from Content.js (update(); only can call that function)
-
-If you find any bugs, please let us know.
-dev@dappuniversity.com

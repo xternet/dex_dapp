@@ -1,7 +1,7 @@
 {
   "name": "dex_dapp",
   "version": "0.2.2",
-  "description": "An updated version of the Capstone project",
+  "description": "Updated version of the Capstone project",
   "engines": {
     "node": "8.11.1"
   },
